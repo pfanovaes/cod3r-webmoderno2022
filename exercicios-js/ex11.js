@@ -7,3 +7,25 @@ Prevalecem as últimas regras sobre as primeiras.
 Partindo daí elabore uma função que recebe um ano e calcula se ele é ano bissexto, imprimindo no console a
 mensagem e retornando true ou false.
 */
+
+function bissexto(ano) {
+    if (ano % 4 == 0) {
+        if (ano % 100 == 0) {
+            if (ano % 400 == 0) {
+                console.log(`${ano} é ano bissexto`);
+                return true;
+            } else {
+                console.log(`${ano} não é ano bissexto`);
+                return false;
+            }
+        } else {
+            console.log(`${ano} é ano bissexto`);
+            return true;
+        }
+    } else {
+        console.log(`${ano} não é ano bissexto`);
+        return false;
+    }
+}
+
+bissexto(2020);

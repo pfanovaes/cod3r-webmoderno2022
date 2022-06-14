@@ -11,3 +11,30 @@ Implemente uma função que receba como parâmetros o código do item pedido, a 
 a ser pago por aquele lanche. Considere que a cada execução somente será calculado um item. Use o
 comando switch. Crie um caso default para produto não existente.
 */
+
+function pedido(codigo, quantidade) {
+    switch (codigo) {
+        case 100:
+            console.log("R$" + quantidade * 3);
+            break;
+        case 200:
+            console.log("R$" + quantidade * 4);
+            break;
+        case 300:
+            console.log("R$" + quantidade * 5.5);
+            break;
+        case 400:
+            console.log("R$" + quantidade * 7.5);
+            break;
+        case 500:
+            console.log("R$" + quantidade * 3.5);
+            break;
+        case 600:
+            console.log("R$" + quantidade * 2.8);
+            break;
+        default:
+            console.log("Produto não existente");
+    }
+}
+
+pedido(900, 2);

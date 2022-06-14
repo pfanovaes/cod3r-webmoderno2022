@@ -5,3 +5,21 @@ comprador queira o hatch, retorne: “Compra efetuada com sucesso”. Nas outras
 que não prefere este modelo?”. Caso seja especificado um modelo que não está disponível, retorne no console:
 “Não trabalhamos com este tipo de automóvel aqui”.
 */
+
+function compraCarro(carro) {
+    switch (carro) {
+        case "hatch":
+            console.log("Compra efetuada com sucesso");
+            break;
+        case "sedan":
+        case "motocicleta":
+        case "caminhonete":
+            console.log("Tem certeza que não prefere este modelo?");
+            break;
+        default:
+            console.log("Não trabalhamos com este tipo de automóvel aqui");
+    }
+}
+
+compraCarro("fusca");
+        
